@@ -1,0 +1,26 @@
+Results for tinyArray(10)
+insert 37.5 μs
+append 80.8 μs
+
+Results for smallArray(100)
+insert 46.6 μs
+append 93 μs
+
+Results for mediumArray(1000)
+insert 182.1 μs
+append 140.7 μs
+
+Results for largeArray(10000)
+insert 8.103 ms
+append 562.3 μs
+
+Results for extraLargeArray(10000)
+insert 960.189 ms
+append 3.2884 ms
+
+Clearly, the larger the array is, the more time it will take
+to finish the function. Of the two functions (doublerAppend and doublerInsert,)
+it seems as though doublerInsert scales worse than doublerAppend. As the arrays get
+bigger, it obviously takes more time for each function, but the amount of time it takes
+for doublerInsert is disproportianate to the amount of time it takes for doublerAppend
+to complete, shown more clearly in the results for largeArray and extraLargeArray. 
